@@ -1,0 +1,14 @@
+# clang formatting. Edit this if you'd like a different code style.
+# This is my personal liking change if using clang-formatter and want a different style.
+BasedOnStyle: LLVM
+BreakBeforeBraces: Attach
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+AllowAllParametersOfDeclarationOnNextLine: false
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+ColumnLimit: 0  # Disables the column limit (long lines will not be wrapped)
+SpaceBeforeParens: ControlStatements
+PointerAlignment: Left
+DerivePointerAlignment: false
