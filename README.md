@@ -1,16 +1,13 @@
-# V5 6048S | High Stakes 2024-2025
+# About this Template
 
-This bot code includes multithreading and mechanisms for solenoid control and chassis and intake control. The version of everything included is PROS 4.1.1 and LemLib 0.5.5
+This template is provided by a senior student (as of Apr 23, 2025) in **Syntechs Robotics 6408** for use in competitive robotics. It is designed to streamline the inital startup of a new season. Specifically for teams starting out using the PROS environment, offering easy to use examples, template, and a streamlined setup process.
 
-## Structure
+Feel free to use and modify this template for your own Robotics projects. Good luck in your Robotics Journey.
 
-src/main.cpp contains everything used at runtime.
-src/autonomous.cpp contains all of the autonomous routines.
-src/hardware.cpp contains the hardware definitions and configuration.
-src/reuseFunc.cpp contains the reusable functions.
+## Included Libraries/Functionality
+**Libraries**
+- ***`PROS`*** : General Library that makes the foundation of interacting with the hardware.
+- ***`LemLib`*** : Library that simplifies many things in Robotics.
+- ***`Robodash`*** : Library that adds an autonomous selector, logging, and images without the need for an SD card.
 
-include/robot is for the headers included in src/
-
-## Licensing
-
-- The project is under an MIT license.
+### Made in Canada 🇨🇦
