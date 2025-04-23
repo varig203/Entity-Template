@@ -8,11 +8,11 @@
 // Motor groups
 extern pros::MotorGroup left_motors;
 extern pros::MotorGroup right_motors;
-extern pros::Motor      primary_intake;
+extern pros::Motor      example_motor;
 
 // Controllers and Pistons
 extern pros::Controller      controller;
-extern pros::adi::DigitalOut pistonMogo;
+extern pros::adi::DigitalOut example_piston;
 
 // Sensors
 extern pros::Imu             imu;
