@@ -12,7 +12,7 @@ extern pros::Motor      example_motor;
 
 // Controllers and Pistons
 extern pros::Controller      controller;
-extern apollo::Piston        example_piston;
+extern entity::Piston        example_piston;
 
 // Sensors
 extern pros::Imu             imu;

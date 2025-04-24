@@ -7,7 +7,7 @@
  *****************************************************/
 
 // Reusable function as this is used everytime to switch the state of a piston.
-namespace apollo {
+namespace entity {
 
 Piston::Piston(uint8_t port) : pros::adi::DigitalOut(port) {
     set_value(state ? 1 : 0);

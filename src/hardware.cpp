@@ -8,7 +8,7 @@ pros::Motor      example_motor(20, pros::MotorGearset::blue);  // example motor
 
 // Controller and Pistons
 pros::Controller      controller(pros::E_CONTROLLER_MASTER); // Initialize controller
-apollo::Piston        example_piston('A');             // Initialize the solenoid
+entity::Piston        example_piston('A');             // Initialize the solenoid
 
 // Basic sensors. Change to your ports/dimensions.
 pros::Imu             imu(0); // IMU

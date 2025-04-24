@@ -2,7 +2,7 @@
 
 #include "pros/adi.hpp"
 
-namespace apollo {
+namespace entity {
 
 class Piston : public pros::adi::DigitalOut {
 private:
