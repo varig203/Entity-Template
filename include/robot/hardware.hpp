@@ -2,7 +2,7 @@
 
 #include "lemlib/api.hpp" // IWYU pragma: keep
 #include "lemlib/chassis/trackingWheel.hpp"
-#include "pros/adi.hpp"
+#include "robot/reuseFunc.hpp"
 #include "pros/misc.hpp"
 
 // Motor groups
@@ -12,7 +12,7 @@ extern pros::Motor      example_motor;
 
 // Controllers and Pistons
 extern pros::Controller      controller;
-extern pros::adi::DigitalOut example_piston;
+extern apollo::Piston        example_piston;
 
 // Sensors
 extern pros::Imu             imu;
@@ -35,6 +35,4 @@ extern lemlib::ExpoDriveCurve steer_curve;
 
 // Chassis
 extern lemlib::Chassis chassis;
-
-void initialize_hardware();
 

@@ -1,4 +1,5 @@
 #include "robot/hardware.hpp"
+#include "robot/reuseFunc.hpp"
 
 // Motor groups
 pros::MotorGroup left_motors({}, pros::MotorGearset::blue); // lLeft Chassis
@@ -7,7 +8,7 @@ pros::Motor      example_motor(20, pros::MotorGearset::blue);  // example motor
 
 // Controller and Pistons
 pros::Controller      controller(pros::E_CONTROLLER_MASTER); // Initialize controller
-pros::adi::DigitalOut example_piston('A');             // Initialize the solenoid for MOGO mech
+apollo::Piston        example_piston('A');             // Initialize the solenoid
 
 // Basic sensors. Change to your ports/dimensions.
 pros::Imu             imu(0); // IMU

@@ -1,13 +1,21 @@
 #include "main.h"
+#include "robot/reuseFunc.hpp"
 
-// Reusable function as this is used everytime I want to switch a piston
-void togglePistonState(bool& isExtended, pros::adi::DigitalOut& piston, int extendDelay, int retractDelay) {
-    isExtended = !isExtended;
-    if (isExtended) {
-        piston.set_value(0);
-        pros::delay(retractDelay);
-    } else {
-        piston.set_value(1);
-        pros::delay(extendDelay);
-    }
+/*****************************************************
+ *                       NOTE:                       *
+ * SOLENOIDS CANNOT SEND DATA AND CAN ONLY READ DATA *
+ *****************************************************/
+
+// Reusable function as this is used everytime to switch the state of a piston.
+namespace apollo {
+
+Piston::Piston(uint8_t port) : pros::adi::DigitalOut(port) {
+    set_value(state ? 1 : 0);
+}
+
+void Piston::toggle() {
+    state = !state;
+    set_value(state ? 1 : 0);
+}
+
 }
