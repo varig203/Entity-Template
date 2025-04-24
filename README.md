@@ -15,9 +15,11 @@ Feel free to use and modify this template for your own Robotics projects. Good l
 **Additional Functionality**
 - ***`Toggles`*** : An easy toggle function for pistons via `entity::Piston`. Check `hardware.cpp` and its respective header file to learn how to use them. Also, check out `solenoid.cpp` for examples on how to run them.
 
-## Additional information
+## Disclaimer
 This template is *not* intended for developers who want a quick, no-effort solution. While it simplifies the setup process, you may still need to familiarize yourself with the libraries and tools included (such as PROS, LemLib, and Robodash). 
 
 For issues related to PROS, LemLib, or Robodash, please refer to their official documentation or community for support. I will be happy to assist with questions related to the additional functionality included in this template.
+
+This project was created as a side project for fun, so please be aware that it's not fully polished. If you find a bug, feel free to fix it yourself and submit a pull request.
 
 ### Made in Canada 🇨🇦
