@@ -1,7 +1,6 @@
 #pragma once
 
 #include "lemlib/api.hpp" // IWYU pragma: keep
-#include "lemlib/chassis/trackingWheel.hpp"
 #include "robot/reuseFunc.hpp"
 #include "pros/misc.hpp"
 
