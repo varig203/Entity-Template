@@ -9,18 +9,13 @@
  *****************************************************/
 
 void solenoidControl_fn() { // Example piston control
-    // Initializing var
-    int  lastButtonState  = 0;     // To track the last button state
-
     while (true) {
-        int currentButtonState  = controller.get_digital(DIGITAL_L1); // Example solenoid.
+        int PistonButton  = controller.get_digital_new_press(DIGITAL_L1); // Example solenoid.
 
         // Check for button press
-        if (currentButtonState && !lastButtonState) {
+        if (PistonButton) {
             example_piston.toggle();
         }
-        // Resetting value
-        lastButtonState  = currentButtonState;
 
         pros::delay(20); // Saving resources
     }
