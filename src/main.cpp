@@ -6,11 +6,10 @@
 #include "robot/motorControl.hpp"
 #include "robot/solenoid.hpp"
 
-/****************************************************************
- * THIS PROGRAM IS FOR THE FINISHED 6408S (NOT QUALIFIED) TEAM. *
- * WE PLACED 7TH IN THE QUALS MATCHES AT WPRA HIGH STEAKS GAME  *
- *                       ON FEB 17, 2025                        *
- ****************************************************************/
+/**********************************************************************
+ * WELCOME TO ENTITY TEMPLATE! CHECKOUT THE GITHUB FOR DOCUMENTATION. *
+ *             HTTPS://GITHUB.COM/VARIG203/ENTITY-TEMPLATE            *
+ **********************************************************************/
 
 rd::Selector autonSelector({//  Initalize Auton Selecton
                             {"Red Ring AWP", rFar_side_awp},
