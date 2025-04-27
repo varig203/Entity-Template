@@ -1,7 +1,7 @@
 #pragma once
 
 #include "lemlib/api.hpp" // IWYU pragma: keep
-#include "robot/reuseFunc.hpp"
+#include "Entity/api.hpp"
 #include "pros/misc.hpp"
 
 // Motor groups

@@ -1,6 +1,6 @@
 #include "main.h"
 #include "robot/solenoid.hpp"
-#include "robot/reuseFunc.hpp"
+#include "Entity/api.hpp"
 #include "robot/hardware.hpp"
 
 /*****************************************************

@@ -1,5 +1,5 @@
 #include "robot/hardware.hpp"
-#include "robot/reuseFunc.hpp"
+#include "Entity/api.hpp"
 
 // Motor groups
 pros::MotorGroup left_motors({}, pros::MotorGearset::blue); // lLeft Chassis

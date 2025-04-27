@@ -1,5 +1,5 @@
 #include "main.h"
-#include "robot/reuseFunc.hpp"
+#include "Entity/SolenoidToggle.hpp"
 
 /*****************************************************
  *                       NOTE:                       *
