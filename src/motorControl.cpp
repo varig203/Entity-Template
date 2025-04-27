@@ -1,5 +1,4 @@
 #include "main.h"
-#include "pros/misc.h"
 #include "robot/hardware.hpp"
 
 void motorControl_fn() {
@@ -10,7 +9,7 @@ void motorControl_fn() {
         // Including buttons
         // Example motor control
         bool exampleMotor = controller.get_digital(DIGITAL_B);
-        
+
         if (exampleMotor) {
             example_motor.move_velocity(600); // Assuming blue motor
         } else {

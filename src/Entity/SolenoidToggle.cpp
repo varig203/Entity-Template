@@ -1,5 +1,5 @@
-#include "main.h"
 #include "Entity/SolenoidToggle.hpp"
+#include "main.h"
 
 /*****************************************************
  *                       NOTE:                       *
@@ -18,4 +18,4 @@ void Piston::toggle() {
     set_value(state ? 1 : 0);
 }
 
-}
+} // namespace entity

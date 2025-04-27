@@ -2,13 +2,13 @@
 #include "Entity/api.hpp"
 
 // Motor groups
-pros::MotorGroup left_motors({}, pros::MotorGearset::blue); // lLeft Chassis
-pros::MotorGroup right_motors({}, pros::MotorGearset::blue);   // Right Chassis
-pros::Motor      example_motor(20, pros::MotorGearset::blue);  // example motor
+pros::MotorGroup left_motors({}, pros::MotorGearset::blue);   // lLeft Chassis
+pros::MotorGroup right_motors({}, pros::MotorGearset::blue);  // Right Chassis
+pros::Motor      example_motor(20, pros::MotorGearset::blue); // example motor
 
 // Controller and Pistons
-pros::Controller      controller(pros::E_CONTROLLER_MASTER); // Initialize controller
-entity::Piston        example_piston('A');             // Initialize the solenoid
+pros::Controller controller(pros::E_CONTROLLER_MASTER); // Initialize controller
+entity::Piston   example_piston('A');                   // Initialize the solenoid
 
 // Basic sensors. Change to your ports/dimensions.
 pros::Imu             imu(0); // IMU
@@ -34,25 +34,25 @@ lemlib::OdomSensors sensors(&vertical_tracking_wheel,   // Vertical tracking whe
 
 // PID controllers
 // Default PID
-lemlib::ControllerSettings angular_controller(2, // proportional gain (kP)
-                                              0, // integral gain (kI)
-                                              10, // derivative gain (kD)
-                                              3, // anti windup
-                                              1, // small error range, in inches
+lemlib::ControllerSettings angular_controller(2,   // proportional gain (kP)
+                                              0,   // integral gain (kI)
+                                              10,  // derivative gain (kD)
+                                              3,   // anti windup
+                                              1,   // small error range, in inches
                                               100, // small error range timeout, in milliseconds
-                                              3, // large error range, in inches
+                                              3,   // large error range, in inches
                                               500, // large error range timeout, in milliseconds
-                                              0 // maximum acceleration (slew)
+                                              0    // maximum acceleration (slew)
 );
-lemlib::ControllerSettings lateral_controller(10, // proportional gain (kP)
-                                              0, // integral gain (kI)
-                                              3, // derivative gain (kD)
-                                              3, // anti windup
-                                              1, // small error range, in inches
+lemlib::ControllerSettings lateral_controller(10,  // proportional gain (kP)
+                                              0,   // integral gain (kI)
+                                              3,   // derivative gain (kD)
+                                              3,   // anti windup
+                                              1,   // small error range, in inches
                                               100, // small error range timeout, in milliseconds
-                                              3, // large error range, in inches
+                                              3,   // large error range, in inches
                                               500, // large error range timeout, in milliseconds
-                                              20 // maximum acceleration (slew)
+                                              20   // maximum acceleration (slew)
 );
 
 // Input curve for throttle input during driver control
