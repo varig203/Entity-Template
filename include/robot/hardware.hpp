@@ -1,7 +1,7 @@
 #pragma once
 
-#include "lemlib/api.hpp" // IWYU pragma: keep
 #include "Entity/api.hpp"
+#include "lemlib/api.hpp" // IWYU pragma: keep
 #include "pros/misc.hpp"
 
 // Motor groups
@@ -10,8 +10,8 @@ extern pros::MotorGroup right_motors;
 extern pros::Motor      example_motor;
 
 // Controllers and Pistons
-extern pros::Controller      controller;
-extern entity::Piston        example_piston;
+extern pros::Controller controller;
+extern entity::Piston   example_piston;
 
 // Sensors
 extern pros::Imu             imu;
@@ -34,4 +34,3 @@ extern lemlib::ExpoDriveCurve steer_curve;
 
 // Chassis
 extern lemlib::Chassis chassis;
-
