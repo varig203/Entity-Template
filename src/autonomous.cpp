@@ -1,7 +1,7 @@
-#include "robot/autonomous.hpp"
+#include "Entity/api.hpp"
 #include "main.h"
+#include "robot/autonomous.hpp"
 #include "robot/hardware.hpp"
-#include "robot/reuseFunc.hpp"
 
 // To add an auton file use the example below for reference
 ASSET(example_txt);
